@@ -31,6 +31,9 @@ Please don't ping Cyfer asking for support with this library though, as it wasn'
 >   - With the exception of Builds, as there's no way to get all Builds.
 <hr>
 
+> ### `@1.1.0` -> `@1.1.1`
+> - Fixed Typings file exports.
+
 # Quick Usage
 ```js
 const API = require('dwapi-wrapper');

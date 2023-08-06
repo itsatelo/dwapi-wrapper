@@ -1,4 +1,4 @@
-export class API {
+export default class API {
     public static ObjectgetBuild(id: string): Promise<BuildObject>;
     public static ObjectgetCategory(name: string): Promise<CategoryObject>;
     public static ObjectgetMantra(name: string): Promise<MantraObject>;
