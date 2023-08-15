@@ -7,7 +7,7 @@ const Outfit = require('./structures/Outfit');
 const Talent = require('./structures/Talent');
 const Weapon = require('./structures/Weapon');
 
-exports = module.exports = class API {
+class API {
     static async getBuild(id) {
         const APIBuild = await GetAPIObjects.getAPIBuild(id);
 
@@ -110,4 +110,19 @@ exports = module.exports = class API {
 
         return Weapons;
     }
+};
+
+exports = module.exports = {
+    getBuild: API.getBuild,
+    getCategory: API.getCategory,
+    getMantra: API.getMantra,
+    getOutfit: API.getOutfit,
+    getTalent: API.getTalent,
+    getWeapon: API.getWeapon,
+
+    getAllCategories: API.getAllCategories,
+    getAllMantras: API.getAllMantras,
+    getAllOutfits: API.getAllOutfits,
+    getAllTalents: API.getAllTalents,
+    getAllWeapons: API.getAllWeapons,
 };

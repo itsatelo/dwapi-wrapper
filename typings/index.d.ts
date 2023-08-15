@@ -1,18 +1,16 @@
 declare module 'dwapi-wrapper' {
-    class API {
-        public static ObjectgetBuild(id: string): Promise<BuildObject>;
-        public static ObjectgetCategory(name: string): Promise<CategoryObject>;
-        public static ObjectgetMantra(name: string): Promise<MantraObject>;
-        public static ObjectgetOutfit(name: string): Promise<OutfitObject>;
-        public static ObjectgetTalent(name: string): Promise<TalentObject>;
-        public static ObjectgetWeapon(name: string): Promise<WeaponObject>;
+        export function ObjectgetBuild(id: string): Promise<BuildObject>;
+        export function ObjectgetCategory(name: string): Promise<CategoryObject>;
+        export function ObjectgetMantra(name: string): Promise<MantraObject>;
+        export function ObjectgetOutfit(name: string): Promise<OutfitObject>;
+        export function ObjectgetTalent(name: string): Promise<TalentObject>;
+        export function ObjectgetWeapon(name: string): Promise<WeaponObject>;
 
-        public static ObjectgetAllCategories(): Promise<CategoryObject[]>;
-        public static ObjectgetAllMantras(): Promise<MantraObject[]>;
-        public static ObjectgetAllOutfits(): Promise<OutfitObject[]>;
-        public static ObjectgetAllTalents(): Promise<TalentObject[]>;
-        public static ObjectgetAllWeapons(): Promise<WeaponObject[]>;
-    }
+        export function ObjectgetAllCategories(): Promise<CategoryObject[]>;
+        export function ObjectgetAllMantras(): Promise<MantraObject[]>;
+        export function ObjectgetAllOutfits(): Promise<OutfitObject[]>;
+        export function ObjectgetAllTalents(): Promise<TalentObject[]>;
+        export function ObjectgetAllWeapons(): Promise<WeaponObject[]>;
 
     interface BuildObject {
         details: BuildDetailsObject;
@@ -282,6 +280,4 @@ declare module 'dwapi-wrapper' {
         Rare = "Rare",
         Advanced = "Advanced",
     }
-
-    export default API;
 }

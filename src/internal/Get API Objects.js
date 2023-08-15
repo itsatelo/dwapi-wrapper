@@ -1,5 +1,5 @@
 const axios = require('axios');
-const domain = 'https://146.190.212.30/api';
+const domain = 'https://api.deepwoken.co';
 
 module.exports = class GetAPIObjects {
     static async getAPIBuild(id) {

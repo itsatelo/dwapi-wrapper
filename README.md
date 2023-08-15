@@ -10,8 +10,8 @@ yarn add dwapi-wrapper
 ```
 
 # About
-The DWAPI-Wrapper is a wrapper for Cyfer's Deepwoken API.<br>
-It provides an ease of access to the majority of the API.
+The DWAPI-Wrapper is a wrapper for Cyfer's Deepwoken <br>
+It provides an ease of access to the majority of the 
 
 
 ## Documentation
@@ -31,24 +31,29 @@ Please don't ping Cyfer asking for support with this library though, as it wasn'
 >   - With the exception of Builds, as there's no way to get all Builds.
 <hr>
 
-> ### `@1.1.0` -> `@1.1.1`
+> ### `@1.1.0` -> `@1.1.1` / `@1.1.2`
 > - Fixed Typings file exports.
+>   - This is false, it failed.
+
+> ### `@1.1.2` -> `@1.2.0`
+> - Fixed Typings file (hopefully).
+> - Changed method of exports; it now exports an Object rather than a Class.
 
 # Quick Usage
 ```js
-const API = require('dwapi-wrapper');
-API.getBuild('id').then(build => console.log(build));
-API.getCategory('metamancer').then(category => console.log(category));
-API.getMantra('graceful flame').then(mantra => console.log(mantra));
-API.getOutfit('black diver').then(outfit => console.log(outfit));
-API.getTalent('undying flame').then(talent => console.log(talent));
-API.getWeapon('evanspear handaxe').then(weapon => console.log(weapon));
+const { getBuild, getCategory, getMantra, /* ... etc */ } = require('dwapi-wrapper');
+getBuild('id').then(build => console.log(build));
+getCategory('metamancer').then(category => console.log(category));
+getMantra('graceful flame').then(mantra => console.log(mantra));
+getOutfit('black diver').then(outfit => console.log(outfit));
+getTalent('undying flame').then(talent => console.log(talent));
+getWeapon('evanspear handaxe').then(weapon => console.log(weapon));
 
-API.getAllCategories().then(categories => console.log(categories));
-API.getAllMantras().then(mantras => console.log(mantras));
-API.getAllOutfits().then(outfits => console.log(outfits));
-API.getAllTalents().then(talents => console.log(talents));
-API.getAllWeapons().then(weapons => console.log(weapons));
+getAllCategories().then(categories => console.log(categories));
+getAllMantras().then(mantras => console.log(mantras));
+getAllOutfits().then(outfits => console.log(outfits));
+getAllTalents().then(talents => console.log(talents));
+getAllWeapons().then(weapons => console.log(weapons));
 ```
 
 # To-Do List
