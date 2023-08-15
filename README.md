@@ -22,22 +22,12 @@ If you need support, the best places do go would be my [Developer Discord](https
 Please don't ping Cyfer asking for support with this library though, as it wasn't developed by them.
 
 # Changes
-> ## `@1.0.0` -> `@1.1.0`
-> - Added support for `Outfits`.
-> - Added Typings file.
->   - I am unsure if this works, since it's my first time writing a Typings file.
->   - If it doesn't work, then I will work on fixing it with `@1.2.0`.
-> - Added the ability to get all of a specific items.
->   - With the exception of Builds, as there's no way to get all Builds.
-<hr>
-
-> ### `@1.1.0` -> `@1.1.1` / `@1.1.2`
-> - Fixed Typings file exports.
->   - This is false, it failed.
-
 > ### `@1.1.2` -> `@1.2.0`
 > - Fixed Typings file (hopefully).
 > - Changed method of exports; it now exports an Object rather than a Class.
+
+> ### `@1.2.0` -> `@1.2.1`
+> - Hopefully, once again, fixed Typings. I DON'T UNDERSTAND THESE GIVE ME A BREAK!!!
 
 # Quick Usage
 ```js

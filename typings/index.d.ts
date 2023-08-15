@@ -1,16 +1,16 @@
 declare module 'dwapi-wrapper' {
-        export function ObjectgetBuild(id: string): Promise<BuildObject>;
-        export function ObjectgetCategory(name: string): Promise<CategoryObject>;
-        export function ObjectgetMantra(name: string): Promise<MantraObject>;
-        export function ObjectgetOutfit(name: string): Promise<OutfitObject>;
-        export function ObjectgetTalent(name: string): Promise<TalentObject>;
-        export function ObjectgetWeapon(name: string): Promise<WeaponObject>;
+        export function getBuild(id: string): Promise<BuildObject>;
+        export function getCategory(name: string): Promise<CategoryObject>;
+        export function getMantra(name: string): Promise<MantraObject>;
+        export function getOutfit(name: string): Promise<OutfitObject>;
+        export function getTalent(name: string): Promise<TalentObject>;
+        export function getWeapon(name: string): Promise<WeaponObject>;
 
-        export function ObjectgetAllCategories(): Promise<CategoryObject[]>;
-        export function ObjectgetAllMantras(): Promise<MantraObject[]>;
-        export function ObjectgetAllOutfits(): Promise<OutfitObject[]>;
-        export function ObjectgetAllTalents(): Promise<TalentObject[]>;
-        export function ObjectgetAllWeapons(): Promise<WeaponObject[]>;
+        export function getAllCategories(): Promise<CategoryObject[]>;
+        export function getAllMantras(): Promise<MantraObject[]>;
+        export function getAllOutfits(): Promise<OutfitObject[]>;
+        export function getAllTalents(): Promise<TalentObject[]>;
+        export function getAllWeapons(): Promise<WeaponObject[]>;
 
     interface BuildObject {
         details: BuildDetailsObject;
