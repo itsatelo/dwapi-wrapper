@@ -1,0 +1,2 @@
+git switch -c @version
+git push origin @version
